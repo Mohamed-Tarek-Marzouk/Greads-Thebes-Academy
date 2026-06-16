@@ -21,7 +21,7 @@ A comprehensive, terminal-based C program built specifically for students of **T
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/thebes-grade-calculator.git
+   git clone https://github.com/Mohamed-Tarek-Marzouk/Greads-Thebes-Academy/
    cd thebes-grade-calculator
    ```
 
