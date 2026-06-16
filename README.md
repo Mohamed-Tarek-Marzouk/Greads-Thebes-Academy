@@ -1,32 +1,70 @@
-# Grade Calculator for Thebes Academy
+# 🎓 Thebes Academy Grade Calculator
 
-This repository contains a C program designed to help students calculate their grades, semester percentages, and overall year percentages. The project has been developed in stages, which are organized into different Git branches.
+![C](https://img.shields.io/badge/Language-C-blue.svg)
+![Version](https://img.shields.io/badge/Version-3.0-brightgreen.svg)
 
-## Branches and Features
+A comprehensive, terminal-based C program built specifically for students of **Thebes Academy** to calculate their grades, semester percentages, and overall academic year evaluations.
 
-### 1. `master` Branch (Original Version)
-**File:** `Calclate the gread.c`
-- This branch contains the initial version of the program.
-- It calculates the grade for a single subject and provides a basic evaluation (Pass, Good, Very Good, Excellent).
-- Uses `goto` statements for navigation.
-- Contains hardcoded logic for checking subjects one by one.
+---
 
-### 2. `v2-enhancements` Branch (Version 2)
-**File:** `Calculate_grade_v2.c`
-- **Main Menu Navigation**: Replaced `goto` statements with `do-while` loops and switch-cases for a much more robust user experience that prevents crashes on bad input.
-- **Data Structures**: Introduced C `struct` to handle subjects, making the code much shorter, cleaner, and easier to scale.
-- **Semester & Year Calculation**: Added the ability to calculate the overall percentage for an entire semester or a full academic year by aggregating the maximum and earned marks of all subjects.
-- **Input Validation**: Added functions to validate user input and clear the input buffer.
+## ✨ Features
 
-### 3. `v3-file-handling` Branch (Version 3 - Current)
-**File:** `Calculate_grade_v3.c`
-- **Complete Subjects Database**: Includes all accurate subjects and maximum marks for all 4 levels (Years 1 to 4), including First and Second semesters, based on the academy's official syllabus.
-- **Formatted Transcript**: Prints a beautifully formatted table at the end of the calculation showing Subject Name, Max Marks, Earned Marks, and Individual Subject Grade, alongside the overall total.
-- **File Handling (Data Saving)**: Automatically saves a copy of the printed transcript into a text file named `Student_Transcript.txt` in the same directory. This creates a permanent record of the student's grades without needing to re-enter them.
+- **📊 Comprehensive Database**: Pre-configured with the exact syllabus, subjects, and maximum marks for all 4 Years (Levels 1 to 4) of Thebes Academy.
+- **🧮 Smart Calculation**: Calculates your percentage for a single subject, a full semester, or aggregates both semesters to give you your final year grade!
+- **🖨️ Beautiful Transcripts**: Generates a clean, formatted ASCII table displaying your subjects, marks, and evaluations instantly.
+- **💾 Auto-Save (File Handling)**: Automatically saves your generated transcript into a `Student_Transcript.txt` file so you never lose your results.
+- **🛡️ Robust Input Handling**: Prevents the program from crashing if you accidentally type letters instead of numbers, and ensures marks cannot exceed the maximum allowed limits.
 
-## How to Compile and Run
-You can compile any of the C files using GCC:
-```bash
-gcc Calculate_grade_v3.c -o GradeCalculator
-./GradeCalculator
-```
+---
+
+## 🚀 How to Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/thebes-grade-calculator.git
+   cd thebes-grade-calculator
+   ```
+
+2. **Compile the program using GCC:**
+   ```bash
+   gcc Calculate_grade_v3.c -o GradeCalculator
+   ```
+
+3. **Run the executable:**
+   - On Windows:
+     ```bash
+     .\GradeCalculator.exe
+     ```
+   - On Linux / macOS:
+     ```bash
+     ./GradeCalculator
+     ```
+
+---
+
+## 🌿 Git Branches & Version History
+
+This project was developed incrementally to demonstrate best software engineering practices. You can explore the evolution of the code across different branches:
+
+### `master` (Original)
+The initial, primitive version of the application (`Calclate the gread.c`). Relied on hardcoded logic and `goto` statements to calculate grades one by one.
+
+### `v2-enhancements` (Version 2)
+Major refactor (`Calculate_grade_v2.c`). 
+- Replaced `goto` with `do-while` loops.
+- Introduced C `struct`s to organize subject data.
+- Added the ability to calculate a full semester and year.
+
+### `v3-file-handling` (Version 3)
+The ultimate version (`Calculate_grade_v3.c`).
+- Integrated the complete syllabus for all 4 years.
+- Added ASCII table Transcript printing.
+- Implemented file handling to save transcripts to `.txt` files.
+
+---
+
+## 🤝 Contributing
+Feel free to fork this project, submit pull requests, or open issues to suggest new features (like GPA calculation using credit hours).
+
+## 📄 License
+This project is open-source and available for all students to use and modify!
